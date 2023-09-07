@@ -58,7 +58,16 @@ export const Contact = () => {
               className=" bg-transparent uppercase border-b-2 border-light-grey pb-4 border-opacity-50  w-full px-6"
               type="text"
               placeholder="EMAIL"
-              {...register("email", { required: "This is required" })}
+              {...register("email", {
+                required: "Email is required",
+                validate: {
+                  maxLength: (v) =>
+                    v.length <= 50 || "The email should have at most 50 characters",
+                  matchPattern: (v) =>
+                    /^\w+([.-]?\w+)*@\w+([.-]?\w+)*(\.\w{2,3})+$/.test(v) ||
+                    "Email address must be a valid address",
+                },
+              })}
             />
             <span className="text-red-400">{errors.email?.message}</span>
           </div>
