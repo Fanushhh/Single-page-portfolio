@@ -27,8 +27,8 @@ export const Projects = () => {
                 </div>
               </div>
               <div className="flex gap-4 mt-5">
-                <button className="uppercase border-b-2 font-semibold border-light-green pb-[10px]">{project.btn1}</button>
-                <button className="uppercase border-b-2 font-semibold border-light-green pb-[10px]">{project.btn2}</button>
+                <a href="#" className="uppercase border-b-2 font-semibold border-light-green pb-[10px]">{project.btn1}</a>
+                <a href="#" className="uppercase border-b-2 font-semibold border-light-green pb-[10px]">{project.btn2}</a>
               </div>
             </div>
           );

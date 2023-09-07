@@ -23,3 +23,15 @@
   font-family: 'Space Grotesk';
   
 }
+
+button:hover{
+  transition: all 250ms ease-in-out;
+  color:rgb(78 225 160);
+}
+
+textarea{
+  resize: none;
+}
+input, textarea{
+  outline: none;
+}
