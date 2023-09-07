@@ -1,0 +1,25 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@font-face {
+  font-family: 'Space Grotesk';
+  font-weight: 700;
+  src: url('../public/fonts/SpaceGrotesk-Bold.ttf');
+}
+
+@font-face {
+  font-family: 'Space Grotesk';
+  font-weight: 600;
+  src: url('../public/fonts/SpaceGrotesk-Medium.ttf');
+}
+@font-face {
+  font-family: 'Space Grotesk';
+  font-weight: 400;
+  src: url('../public/fonts/SpaceGrotesk-VariableFont_wght.ttf');
+}
+
+#root {
+  font-family: 'Space Grotesk';
+  
+}
