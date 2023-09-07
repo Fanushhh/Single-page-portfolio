@@ -2,8 +2,8 @@ import { websiteData } from "../websiteData";
 
 export const Projects = () => {
   return (
-    <section className="px-4 lg:px-[165px] mb-[80px] sm:mb-[100px] lg:mb-[140px]">
-      <div className="flex justify-between pb-10 items-center">
+    <section className="px-4 lg:px-[165px] mb-[80px] sm:mb-[100px] lg:mb-[140px]  lg:flex lg:items-center lg:flex-col  lg:w-full">
+      <div className="flex w-full justify-between pb-10 items-center lg:max-w-[1110px]">
         <h1 className="text-[40px] leading-[48px] font-bold sm:text-[72px] sm:leading-[72px]">
           {websiteData.projects.title}
         </h1>
@@ -11,7 +11,7 @@ export const Projects = () => {
           {websiteData.projects.ctaButton}
         </button>
       </div>
-      <div className="sm:grid sm:grid-cols-2 gap-6">
+      <div className="sm:grid sm:grid-cols-2 gap-6 lg:max-w-[1110px]">
         {websiteData.projects.projects.map((project, index) => {
           return (
             <div className="mb-10 " key={index}>

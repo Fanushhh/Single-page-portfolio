@@ -30,8 +30,8 @@ export const Contact = () => {
   };
 
   return (
-    <section className="px-4 lg:px-[165px] bg-dark-grey relative after:content-[''] after:w-[530px] after:h-[129px] after:absolute after:bg-pattern-rings after:bg-no-repeat after:top-1/2 after:left-[-340px] after:z-[1] sm:flex sm:flex-col sm:justify-center sm:after:top-auto sm:after:bottom-1/4 sm:after:left-[-380px] lg:after:left-[-200px]">
-      <div className="lg:flex lg:py-[88px] lg:justify-between">
+    <section className="px-4 lg:px-[165px] bg-dark-grey relative after:content-[''] after:w-[530px] after:h-[129px] after:absolute after:bg-pattern-rings after:bg-no-repeat after:top-1/2 after:left-[-340px] after:z-[1] sm:flex sm:flex-col sm:justify-center sm:after:top-auto sm:after:bottom-1/4 sm:after:left-[-380px] lg:after:left-[-200px] lg:flex lg:items-center lg:flex-col  lg:w-full">
+      <div className="lg:flex lg:py-[88px] lg:justify-between lg:max-w-[1100px] w-full">
         <div className=" pt-14 text-center lg:text-start sm:max-w-[445px] mx-auto lg:mx-0 sm:text-body sm:leading-body">
           <h1 className="text-[40px] tracking-[-1.14px] font-bold pb-[20px]">
             {websiteData.contact.title}
@@ -77,8 +77,8 @@ export const Contact = () => {
           </button>
         </form>
       </div>
-      <hr className="my-14" />
-      <div className=" w-full flex flex-col items-center gap-5 pb-14 sm:flex-row sm:justify-between px-8">
+      <hr className="my-14 lg:max-w-[1100px] w-full" />
+      <div className=" w-full flex flex-col items-center gap-5 pb-14 sm:flex-row sm:justify-between px-8 lg:max-w-[1100px]">
         <p className="text-heading-m leading-m font-bold">
           {websiteData.heroSection.title}
         </p>

@@ -34,7 +34,8 @@ export default {
         'pattern-circle': "url('/images/pattern-circle.svg')",
       },
       backgroundPosition:{
-        "desktop-position": 'center right 140px'
+        "desktop-position": 'center right 140px',
+        "desktop-xl": 'center right 435px'
       }
     },
   },
