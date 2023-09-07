@@ -30,53 +30,55 @@ export const Contact = () => {
   };
 
   return (
-    <section className="px-4 bg-dark-grey">
-      <div className=" pt-14 text-center">
-        <h1 className="text-[40px] tracking-[-1.14px] font-bold pb-[20px]">
-          {websiteData.contact.title}
-        </h1>
-        <p>{websiteData.contact.description}</p>
+    <section className="px-4 lg:px-[165px] bg-dark-grey relative after:content-[''] after:w-[530px] after:h-[129px] after:absolute after:bg-pattern-rings after:bg-no-repeat after:top-1/2 after:left-[-340px] after:z-[1] sm:flex sm:flex-col sm:justify-center sm:after:top-auto sm:after:bottom-1/4 sm:after:left-[-380px] lg:after:left-[-200px]">
+      <div className="lg:flex lg:py-[88px] lg:justify-between">
+        <div className=" pt-14 text-center lg:text-start sm:max-w-[445px] mx-auto lg:mx-0 sm:text-body sm:leading-body">
+          <h1 className="text-[40px] tracking-[-1.14px] font-bold pb-[20px]">
+            {websiteData.contact.title}
+          </h1>
+          <p>{websiteData.contact.description}</p>
+        </div>
+        <form
+          onSubmit={handleSubmit(onSubmit)}
+          className="flex flex-col gap-8 mt-12 sm:max-w-[445px] w-full mx-auto lg:mx-0"
+        >
+          <div>
+            <input
+              autoComplete="false"
+              className=" bg-transparent uppercase border-b-2 border-light-grey pb-4 border-opacity-50  w-full px-6"
+              type="text"
+              placeholder="NAME"
+              {...register("fullName", { required: "This is required" })}
+            />
+            <span className="text-red-400">{errors.fullName?.message}</span>
+          </div>
+          <div>
+            <input
+              autoComplete="false"
+              className=" bg-transparent uppercase border-b-2 border-light-grey pb-4 border-opacity-50  w-full px-6"
+              type="text"
+              placeholder="EMAIL"
+              {...register("email", { required: "This is required" })}
+            />
+            <span className="text-red-400">{errors.email?.message}</span>
+          </div>
+          <div>
+            <textarea
+              autoComplete="false"
+              className=" bg-transparent uppercase border-b-2 border-light-grey w-full border-opacity-50 pb-4 px-6"
+              rows={5}
+              cols={15}
+              placeholder="Message"
+              {...register("message")}
+            />
+          </div>
+          <button className=" self-end uppercase mt-6 tracking-[2.29px] border-b-2 border-light-green pb-2">
+            Send message
+          </button>
+        </form>
       </div>
-      <form
-        onSubmit={handleSubmit(onSubmit)}
-        className="flex flex-col gap-8 mt-12 "
-      >
-        <div>
-          <input
-            autoComplete="false"
-            className=" bg-transparent uppercase border-b-2 border-light-grey pb-4 border-opacity-50  w-full px-6"
-            type="text"
-            placeholder="NAME"
-            {...register("fullName", { required: "This is required" })}
-          />
-          <span className="text-red-400">{errors.fullName?.message}</span>
-        </div>
-        <div>
-          <input
-            autoComplete="false"
-            className=" bg-transparent uppercase border-b-2 border-light-grey pb-4 border-opacity-50  w-full px-6"
-            type="text"
-            placeholder="EMAIL"
-            {...register("email", { required: "This is required" })}
-          />
-          <span className="text-red-400">{errors.email?.message}</span>
-        </div>
-        <div>
-          <textarea
-            autoComplete="false"
-            className=" bg-transparent uppercase border-b-2 border-light-grey w-full border-opacity-50 pb-4 px-6"
-            rows={5}
-            cols={15}
-            placeholder="Message"
-            {...register("message")}
-          />
-        </div>
-        <button className=" self-end uppercase mt-6 tracking-[2.29px] border-b-2 border-light-green pb-2">
-          Send message
-        </button>
-      </form>
       <hr className="my-14" />
-      <div className=" w-full flex flex-col items-center gap-5 pb-14">
+      <div className=" w-full flex flex-col items-center gap-5 pb-14 sm:flex-row sm:justify-between px-8">
         <p className="text-heading-m leading-m font-bold">
           {websiteData.heroSection.title}
         </p>

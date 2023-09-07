@@ -24,7 +24,7 @@
   
 }
 
-button:hover{
+button:hover, a:hover{
   transition: all 250ms ease-in-out;
   color:rgb(78 225 160);
 }

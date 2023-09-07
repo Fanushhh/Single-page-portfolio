@@ -28,11 +28,14 @@ export default {
       },
       backgroundImage: {
         "hero-img-mobile": "url('/images/image-profile-mobile.webp')",
-        "hero-img-tablet": "url('/images/image-profile-tablet.webp)",
-        "hero-img-desktop": "url('/images/image-profile-desktop.webp)",
+        "hero-img-tablet": "url('/images/image-profile-tablet.webp')",
+        "hero-img-desktop": "url('/images/image-profile-desktop.webp')",
         'pattern-rings': "url('/images/pattern-rings.svg')",
         'pattern-circle': "url('/images/pattern-circle.svg')",
       },
+      backgroundPosition:{
+        "desktop-position": 'center right 140px'
+      }
     },
   },
   plugins: [],

@@ -7,7 +7,7 @@ import { Experience } from "./components/experience"
 function App() {
   
   return (
-    <main className="pt-5">
+    <main className="pt-5 sm:pt-0">
       <Hero />
       <Experience />
       <Projects />
