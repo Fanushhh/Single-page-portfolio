@@ -35,7 +35,7 @@ export default {
       },
       backgroundPosition:{
         "desktop-position": 'center right 140px',
-        "desktop-xl": 'center right 435px'
+        "desktop-xl": 'center right 300px'
       }
     },
   },
